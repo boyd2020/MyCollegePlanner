@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_agenda" android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_agenda"
+            android:title="@string/menu_agenda"
+            android:icon="@drawable/baseline_calendar_today_black_48dp"/>
+
+    </group>
+
+    <group android:id="@+id/group_content" android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_professor"
+            android:title="@string/menu_professor"
+            android:icon="@drawable/ic_person_white_48dp"/>
+
+        <item android:id="@+id/menu_courses"
+            android:title="@string/menu_courses"
+            android:icon="@drawable/baseline_class_black_48dp"/>
+
+        <item android:id="@+id/menu_assignment"
+            android:title="@string/menu_assignment"
+            android:icon="@drawable/ic_assignment_black_48dp"/>
+
+        <item android:id="@+id/menu_exam"
+            android:title="@string/menu_exam"
+            android:icon="@drawable/ic_assessment_black_48dp"/>
+
+        <item android:id="@+id/menu_grades"
+            android:title="@string/menu_grades"
+            android:icon="@drawable/baseline_star_rate_black_48dp"/>
+
+        <item android:id="@+id/menu_notes"
+            android:title="@string/menu_notes"
+            android:icon="@drawable/baseline_note_black_48dp"/>
+
+    </group>
+
+
+    <group android:id="@+id/group_help" android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_help"
+            android:title="@string/menu_help"
+            android:icon="@drawable/ic_help_black_48dp"/>
+
+        <item android:id="@+id/menu_rate"
+            android:title="@string/menu_rate"
+            android:icon="@drawable/baseline_rate_review_black_48dp"/>
+
+    </group>
+
+</menu>

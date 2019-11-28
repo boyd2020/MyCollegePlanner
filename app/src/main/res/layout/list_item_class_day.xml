@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding">
+
+
+    <CheckBox
+        android:id="@+id/dayCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:buttonTint="@color/colorAccent"/>
+
+    <TextView
+        android:id="@+id/dayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/default_margin_left"
+        android:layout_gravity="center_vertical"
+        android:text="Mon"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+</LinearLayout>

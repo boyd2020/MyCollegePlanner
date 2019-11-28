@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gradeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_card_margin"
+    app:strokeWidth="@dimen/default_stroke_width"
+    app:strokeColor="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_padding"
+        android:background="@drawable/card_selector">
+
+        <TextView
+            android:id="@+id/gradeEarned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="100"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circle"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/default_margin_left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/courseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assignment Name"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+
+            <TextView
+                android:id="@+id/assignName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin_top"
+                android:text="John Smith"
+                android:textColor="@drawable/card_text_selector"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/gradeDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorAccent"
+            android:text="Jun 30"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceMedium"/>
+
+    </LinearLayout>
+
+</android.support.design.card.MaterialCardView>

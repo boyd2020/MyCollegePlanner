@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default Dimensions -->
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_margin">16dp</dimen>
+    <dimen name="default_margin_left">15dp</dimen>
+    <dimen name="default_margin_top">5dp</dimen>
+    <dimen name="default_image_size">40dp</dimen>
+    <dimen name="default_fab_size">56dp</dimen>
+    <dimen name="default_fab_margin">24dp</dimen>
+    <dimen name="default_elevation">6dp</dimen>
+    <dimen name="default_card_radius">4dp</dimen>
+    <dimen name="default_card_margin">8dp</dimen>
+    <dimen name="default_dialog_width">320dp</dimen>
+    <dimen name="default_stroke_width">2dp</dimen>
+    <dimen name="default_min_height">220dp</dimen>
+
+    <!-- Intro Slide Dimensions -->
+    <dimen name="welcome_image_size">160dp</dimen>
+
+
+    <!-- Card Sizes -->
+    <dimen name="min_course_card_size">400dp</dimen>
+
+
+    <!-- Section Dimensions -->
+    <dimen name="section_margin_top">20dp</dimen>
+
+    <!-- Fab Sizes -->
+    <dimen name="main_fab_size">56dp</dimen>
+    <dimen name="sub_fab_size">40dp</dimen>
+    <dimen name="sub_fab_margin">10dp</dimen>
+
+
+    <!-- App Bar Dimens -->
+    <dimen name="app_bar_height">300dp</dimen>
+    <dimen name="app_bar_overview_height">220dp</dimen>
+    <dimen name="app_bar_image_size">300dp</dimen>
+
+
+    <!-- Image Sizes -->
+    <dimen name="contact_image_size">60dp</dimen>
+    <dimen name="mic_image_size">60dp</dimen>
+    <dimen name="logo_image_size">140dp</dimen>
+
+    <!-- Bottom Sheet Dimens -->
+    <dimen name="bottom_sheet_padding">8dp</dimen>
+    <dimen name="bottom_sheet_icon_size">28dp</dimen>
+    <dimen name="bottom_sheet_icon_margin">32dp</dimen>
+
+
+    <!-- Widget Dimens -->
+    <dimen name="widget_image_size">28dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/default_min_height"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    android:layout_margin="@dimen/cardview_compat_inset_shadow">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+            <TableRow android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dayNumTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="08"
+                    android:textSize="50sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@color/subTextColor"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/dayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceLarge"/>
+
+                    <TextView
+                        android:id="@+id/monthTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text="June 2018"
+                        android:fontFamily="sans-serif-light"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceSmall"/>
+
+                </LinearLayout>
+            </TableRow>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/section_margin_top">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/eventRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/section_margin_top"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                    tools:listitem="@layout/card_event"/>
+
+            </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

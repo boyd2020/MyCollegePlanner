@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        app:elevation="@dimen/default_elevation"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:expandedTitleMarginStart="48dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/CollapsingTextStyle"
+            app:collapsedTitleTextAppearance="@style/CollapsingTextStyle">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:layout_height="?actionBarSize"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_calendar_today_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course_date"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/courseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:id="@+id/itemImageView"
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_schedule_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <LinearLayout
+                    android:id="@+id/courseStartRow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start Time"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/courseStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/courseEndRow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EndTime"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/courseEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/default_fab_size"
+        android:layout_height="53dp"
+        android:layout_margin="@dimen/default_fab_margin"
+        android:src="@drawable/ic_check_white_48dp"
+        android:tint="@android:color/white"
+        app:fab_elevationCompat="@dimen/default_elevation"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end" />
+
+</android.support.design.widget.CoordinatorLayout>

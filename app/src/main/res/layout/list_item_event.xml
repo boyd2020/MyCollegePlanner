@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:id="@+id/eventCardContainer"
+    android:background="@drawable/card_selector">
+
+        <ImageView
+            android:id="@+id/eventColor"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent"/>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/eventInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Technical Support"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="sans-serif-medium"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                tools:text="8:30 AM - 10:30 AM"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@drawable/card_text_selector"
+                android:textAppearance="?android:textAppearanceLarge"/>
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/event_empty"
+            android:textColor="@color/subTextColor"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="gone"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layoutAnimation="@anim/layout_animation_slide_top"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/default_fab_size"
+        android:layout_height="@dimen/default_fab_size"
+        android:layout_margin="@dimen/default_fab_margin"
+        android:src="@drawable/fab_add"
+        app:layout_anchor="@id/recyclerView"
+        app:layout_anchorGravity="bottom|end"
+        android:tint="@android:color/white"
+        app:rippleColor="@android:color/darker_gray"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

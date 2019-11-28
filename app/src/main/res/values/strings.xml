@@ -1,0 +1,223 @@
+<resources>
+    <integer name="anim_duration">700</integer>
+    <string name="app_name">MyCollegePlanner</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="action_share">Share</string>
+    <string name="email_question">MyCollegePlanner Feedback</string>
+    <string name="email_error">Please install an email client on this device</string>
+    <string name="ad_id">ca-app-pub-2548398070272543/2202344948</string>
+    <string name="app_id">ca-app-pub-2548398070272543~3653181506</string>
+    <string name="ad_banner_id">ca-app-pub-2548398070272543/8414117775</string>
+
+    <!-- Misc Labels -->
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="select">Select</string>
+
+    <!-- Fab Labels -->
+    <string name="notes">Notes</string>
+    <string name="assignment">Assignment</string>
+    <string name="course">Course</string>
+    <string name="note">Note</string>
+    <string name="professor">Professor</string>
+    <string name="grade">Grade</string>
+
+    <!-- Spinner Strings -->
+    <string name="spinner_day">Day</string>
+    <string name="spinner_week">Week</string>
+    <string name="spinner_month">Month</string>
+
+    <!-- Hints -->
+    <string name="hint_course_name">Course Name*</string>
+    <string name="hint_date">Date*</string>
+    <string name="na">N/A</string>
+
+    <!-- Dialog -->
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_create">Create</string>
+
+    <!-- Radio Button Text -->
+    <string name="radio_not_done">Not Done</string>
+    <string name="radio_done">Completed</string>
+    <string name="radio_assignment_hw">Homework</string>
+    <string name="radio_assignment_exam">Exam</string>
+
+
+    <!-- Event Section -->
+    <string name="event_empty">No Events Available</string>
+
+    <!-- Assignment Section -->
+    <string name="assignment_type">Assignment Type</string>
+    <string name="assignment_progress">Progress</string>
+    <string name="assignment_due_date">Due Date</string>
+    <string name="assignment_grade">Grade</string>
+    <string name="assignment_course">Course</string>
+    <string name="assignment_add">Add Assignment</string>
+    <string name="assignment_edit">Edit Assignment</string>
+    <string name="hint_assignment_name">Assignment Name</string>
+    <string name="hint_assignment_course">Course Name</string>
+    <string name="hint_assignment_due">Due Date</string>
+    <string name="hint_assignment_grade">Grade</string>
+    <string name="assignment_not_done">Not Done</string>
+    <string name="assignment_completed">Done</string>
+    <string name="assignment_homework">Homework</string>
+    <string name="assignment_exam">Exam</string>
+    <string name="assignment_tab_title">Assignments</string>
+    <string name="exam_tab_title">Exams</string>
+    <string name="assignment_empty">No Assignments Available</string>
+    <string name="exam_empty">No Exams Available</string>
+    <string name="assignment_select">Select Assignment</string>
+
+
+    <!-- Course Section -->
+    <string name="course_info">Course Info</string>
+    <string name="course_name">Course Name</string>
+    <string name="course_color">Course Color</string>
+    <string name="course_professor">Professor</string>
+    <string name="course_location">Location</string>
+    <string name="course_days">Course Days</string>
+    <string name="course_date">Date</string>
+    <string name="course_start">Start</string>
+    <string name="course_end">End</string>
+    <string name="course_start_date">Start Date</string>
+    <string name="course_end_date">End Date</string>
+    <string name="course_start_time">Start Time</string>
+    <string name="course_end_time">End Time</string>
+    <string name="course_dates">Course Dates</string>
+    <string name="course_add">Add Course</string>
+    <string name="course_edit">Edit Course</string>
+    <string name="course_select">Select Course</string>
+    <string name="course_tab_title">Courses</string>
+    <string name="hint_course_time">00:00</string>
+    <string name="hint_course_date">09/20/18</string>
+    <string name="hint_course_days">Days</string>
+    <string name="error_course_name">Please enter a name for the course</string>
+    <string name="error_course_professor">Please select a professor for this course</string>
+    <string name="error_course_start_date">Please select an start date for the course</string>
+    <string name="error_course_end_date">Please select an end date for the course</string>
+    <string name="error_course_start_time">Please select a start time for the course</string>
+    <string name="error_course_end_time">Please select an end time for the course</string>
+    <string name="course_empty">No Courses Available</string>
+
+
+    <!-- Grade Section -->
+    <string name="grade_tab_title">Grades</string>
+    <string name="grade_add">Add Grade</string>
+    <string name="grade_edit">Edit Grade</string>
+    <string name="hint_grade_worth">Points Worth</string>
+    <string name="hint_grade_earned">Points Earned</string>
+    <string name="hint_grade_assignment">Assignment Name</string>
+    <string name="error_grade_worth">Please enter the grade worth</string>
+    <string name="error_grade_earned">Please enter the grade Earned</string>
+    <string name="error_grade_assignment">Please select an assignment for the grade</string>
+    <string name="error_grade_date">Please select a date for the grade</string>
+    <string name="grade_date">Date Graded</string>
+    <string name="grade_worth">Points Worth</string>
+    <string name="grade_earned">Points Earned</string>
+    <string name="grade_empty">No Grades Available</string>
+
+    <!-- Professor Section -->
+    <string name="hint_prof_name">Professor Name</string>
+    <string name="hint_prof_phone">Professor Phone</string>
+    <string name="hint_prof_email">Professor Email</string>
+    <string name="hint_prof_office">Professor Office</string>
+    <string name="prof_office">Office</string>
+    <string name="prof_add">Add Professor</string>
+    <string name="prof_edit">Edit Professor</string>
+    <string name="prof_tab_title">Professors</string>
+    <string name="prof_select">Select Professor</string>
+    <string name="error_prof_name">Please enter a name for the professor</string>
+    <string name="prof_empty">No Professors Available</string>
+
+
+    <!-- Note Section -->
+    <string name="hint_note_title">Note Title</string>
+    <string name="hint_note_desc">Note Description</string>
+    <string name="mic_note_desc">Listening for note description</string>
+    <string name="note_name">Note Name</string>
+    <string name="note_description">Note Text</string>
+    <string name="note_date">Created: %1$s</string>
+    <string name="note_title">Note Title</string>
+    <string name="note_desc">Note Description</string>
+    <string name="note_created">Note Created</string>
+    <string name="note_edit">Edit Note</string>
+    <string name="note_add">Add Note</string>
+    <string name="note_tab_title">Notes</string>
+    <string name="note_empty">No Notes Available</string>
+
+
+    <!-- Assignment Section -->
+    <string name="error_assign_name">Please enter an assignment name</string>
+    <string name="error_assign_date">Please add a due date for the assignment</string>
+    <string name="error_assign_course">Please select a course for this assignment</string>
+    <string name="assign_empty">No Assignments Available</string>
+
+    <!-- Days -->
+    <string name="mon">Mon</string>
+    <string name="tues">Tue</string>
+    <string name="wens">Wed</string>
+    <string name="thurs">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+
+
+    <!-- Menu Strings -->
+    <string name="menu_agenda">Agenda</string>
+    <string name="menu_professor">Professor</string>
+    <string name="menu_courses">Courses</string>
+    <string name="menu_assignment">Assignments</string>
+    <string name="menu_exam">Exams</string>
+    <string name="menu_grades">Grades</string>
+    <string name="menu_notes">Notes</string>
+    <string name="menu_help">Help and Feedback</string>
+    <string name="menu_rate">Rate this app</string>
+    <string name="menu_header_extras">Extras</string>
+    <string name="menu_header_content">Content</string>
+    <string name="menu_job">Jobs</string>
+
+    <!-- Term Strings -->
+    <string name="default_term">Term 1</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+    <!-- Notification Strings -->
+    <string name="notification_more_details">Click for more details</string>
+    <string name="notification_events_today">Events Today</string>
+
+
+    <!-- Slide Labels -->
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <!-- Slides -->
+    <string name="slide_1_title">Welcome to CollegePlanner</string>
+    <string name="slide_1_desc">A planner designed to make managing your time in school that much easier</string>
+
+    <string name="slide_2_title">Your Digital Planner</string>
+    <string name="slide_2_desc">Add and manage your assignments, courses, professors, notes and more all in one place</string>
+
+    <string name="slide_3_title">Daily Notifications</string>
+    <string name="slide_3_desc">Receive daily notifications for all upcoming assignments and class dates.</string>
+
+    <string name="slide_4_title">Widgets</string>
+    <string name="slide_4_desc">Don\'t have time to open our app? Add our widgets to your home screen
+    to stay up to date with upcoming events</string>
+
+    <string name="slide_5_title">Thank you for using CollegePlanner</string>
+    <string name="slide_5_desc">If you have any questions or feedback, please select the \"Help and Feedback\" section
+        or email us at <b>bboyd.apps@gmail.com</b></string>
+
+    <!-- Rate App -->
+    <string name="rate_app">Rate This App</string>
+
+
+</resources>

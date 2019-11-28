@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/itemDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="JUNE 17"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+</LinearLayout>

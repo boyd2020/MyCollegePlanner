@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.b96software.schoolplannerapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2548398070272543~3653181506"/>
+
+
+        <activity
+            android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
+            android:hardwareAccelerated="true"
+            android:resizeableActivity="false"
+            android:theme="@android:style/Theme.NoTitleBar"
+            tools:ignore="UnusedAttribute" />
+
+
+        <receiver
+            android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.inmobi.share.id"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".SplashActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".MainActivity"/>
+
+        <activity android:name=".WelcomeActivity"/>
+
+        <activity
+            android:name=".notes.NoteTabActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".notes.NoteOverviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".notes.EditNoteActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".notes.AddNoteActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".professors.ProfessorTabActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".professors.ProfessorOverviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".professors.AddProfessorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".professors.EditProfessorActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".course.CourseTabActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".course.CourseOverviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".course.AddCourseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".course.EditCourseActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".course.CourseDetailActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".classdate.EditClassDateActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".classdate.ClassDateOverviewActivity" />
+        <activity
+            android:name=".assignments.AddAssignmentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".assignments.AssignmentTabActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".assignments.AssignmentOverviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".assignments.EditAssignmentActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".grades.GradeTabActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".grades.AddGradeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".grades.EditGradeActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".grades.GradeOverviewActivity"
+            android:windowSoftInputMode="stateHidden" />
+
+        <provider
+            android:name=".providers.PlannerProvider"
+            android:authorities="com.b96software.schoolplannerapp"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service android:name=".services.ClassDatesIntentService" />
+
+
+        <service
+            android:name=".services.NoteWidgetRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".services.EventWidgetRemoteViewsService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <receiver android:name=".widgets.NoteWidget" android:label="@string/notes"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.b96software.schoolplannerapp.action.UPDATE_NOTES" />
+                <action android:name="com.b96software.schoolplannerapp.action.ADD_NOTE_DAY" />
+                <action android:name="com.b96software.schoolplannerapp.action.SUB_NOTE_DAY" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/note_widget_info" />
+        </receiver>
+
+
+        <receiver android:name=".widgets.EventWidget" android:label="@string/menu_agenda"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.b96software.schoolplannerapp.action.UPDATE_EVENTS" />
+                <action android:name="com.b96software.schoolplannerapp.action.ADD_EVENT_DAY" />
+                <action android:name="com.b96software.schoolplannerapp.action.SUB_EVENT_DAY" />
+                <action android:name="com.b96software.schoolplannerapp.action.SELECT_EVENT"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/event_widget_info" />
+        </receiver>
+
+
+        <receiver android:name=".receivers.NotificationReceiver"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="com.b96software.schoolplannerapp.action.DAILY_NOTIF" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+
+
+        </receiver>
+
+
+
+    </application>
+
+</manifest>

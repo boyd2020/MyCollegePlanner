@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "619093266770",
+    "firebase_url": "https://mycollegeplanner-73cd7.firebaseio.com",
+    "project_id": "mycollegeplanner-73cd7",
+    "storage_bucket": "mycollegeplanner-73cd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619093266770:android:4e25d9364008dd76",
+        "android_client_info": {
+          "package_name": "com.b96software.schoolplannerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619093266770-5epcdf43ditcdab2m4iklfrrtcc0fue1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.b96software.schoolplannerapp",
+            "certificate_hash": "4a52c2a00d438a897fa58693d1780ee6c7670789"
+          }
+        },
+        {
+          "client_id": "619093266770-gerh50dk5ddqtiijh6623nq323tlhe5s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbJeLMt4u7DEL9sa58QnjRZVf_SlA7pz4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619093266770-gerh50dk5ddqtiijh6623nq323tlhe5s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-2548398070272543~3653181506"
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        app:elevation="@dimen/default_elevation"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:expandedTitleTextAppearance="@style/CollapsingTextStyle"
+            app:collapsedTitleTextAppearance="@style/CollapsingTextStyle">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:layout_height="?actionBarSize"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/default_fab_size"
+        android:layout_height="@dimen/default_fab_size"
+        android:layout_margin="@dimen/default_fab_margin"
+        app:fab_elevationCompat="@dimen/default_elevation"
+        android:src="@drawable/ic_check_white_48dp"
+        android:tint="@android:color/white"
+        app:layout_anchor="@id/appbar"
+        app:layout_anchorGravity="bottom|right|end"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_create_white_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/assignName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_assignment_name"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_assignment_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_assign_group"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_hw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:text="@string/assignment_homework"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:background="@drawable/radio_button_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_exam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+                        android:text="@string/assignment_exam"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:background="@drawable/radio_button_selector"
+                        android:button="@android:color/transparent"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_calendar_today_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <LinearLayout
+                    android:id="@+id/assignDateRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hint_assignment_due"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/assignDueDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:hint="@string/hint_assignment_due"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_class_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <LinearLayout
+                    android:id="@+id/assignCourseRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/course"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/assignCourse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:hint="@string/hint_assignment_course"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/baseline_star_rate_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <LinearLayout
+                    android:id="@+id/gradeRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/assignment_grade"
+                        android:fontFamily="sans-serif-medium"
+                        android:textColor="@color/colorAccent"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+
+                    <TextView
+                        android:id="@+id/assignGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin_top"
+                        android:text=""
+                        android:hint="@string/hint_assignment_grade"
+                        android:fontFamily="sans-serif-medium"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/default_padding">
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center"
+                    android:src="@drawable/load_48px"
+                    android:tint="@color/colorAccent"/>
+
+                <RadioGroup
+                    android:id="@+id/radio_progress_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_left"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/radio_not_done"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/assignment_not_done"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:background="@drawable/radio_button_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_completed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textSize="20sp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/assignment_completed"
+                        android:textColor="@drawable/radio_text_selector"
+                        android:button="@android:color/transparent"
+                        android:background="@drawable/radio_button_selector"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

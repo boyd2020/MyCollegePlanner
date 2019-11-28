@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding">
+
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:text="@string/course_add"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dialogRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/section_margin_top"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin">
+
+
+        <TextView
+            android:id="@+id/dialogCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/dialog_cancel"
+            android:textAllCaps="true"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/dialogAdd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:text="@string/dialog_create"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+    </TableRow>
+
+
+</LinearLayout>

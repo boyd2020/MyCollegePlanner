@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/noteWidgetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/widget_margin"
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:layout_width="@dimen/widget_image_size"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_calendar_today_black_48dp"
+            android:tint="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/default_margin_left"
+            android:text="January 14"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:textAppearance="?android:textAppearanceSmall"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/default_margin_left"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/widget_image_size"
+                android:layout_height="@dimen/widget_image_size"
+                android:src="@drawable/back"/>
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="@dimen/widget_image_size"
+                android:layout_height="@dimen/widget_image_size"
+                android:layout_marginLeft="@dimen/default_margin_left"
+                android:src="@drawable/next"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp" />
+
+
+</LinearLayout>

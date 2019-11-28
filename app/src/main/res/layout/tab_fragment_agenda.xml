@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.b96software.schoolplannerapp.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <TextView
+            android:id="@+id/emptyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/event_empty"
+            android:textColor="@color/subTextColor"
+            android:fontFamily="sans-serif-medium"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            app:spanCount="1"
+            app:layoutManager="android.support.v7.widget.StaggeredGridLayoutManager"
+            android:layoutAnimation="@anim/layout_animation_slide_top"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_peekHeight="60dp"
+        app:behavior_hideable="false"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+       <FrameLayout
+           android:id="@+id/noteFrame"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

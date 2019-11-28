@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcomePagerFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/bg_screen1">
+
+
+
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_5_title"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceLarge"/>
+
+    <ImageView
+        android:id="@+id/welcomeImage"
+        android:layout_width="@dimen/welcome_image_size"
+        android:layout_height="@dimen/welcome_image_size"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_gravity="center"
+        android:src="@drawable/web_hi_res_512"
+        android:tint="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/welcomeDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:text="@string/slide_5_desc"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+
+
+</LinearLayout>

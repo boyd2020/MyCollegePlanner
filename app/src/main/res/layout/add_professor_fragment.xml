@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_image_size"
+            app:elevation="@dimen/default_elevation"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true">
+
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsingToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:expandedTitleMarginStart="48dp"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:collapsedTitleTextAppearance="@style/CollapsingTextStyle"
+                app:expandedTitleTextAppearance="@style/CollapsingTextStyle">
+
+                <ImageView
+                    android:id="@+id/profImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:actionBarSize"
+                    app:layout_collapseMode="pin"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:titleTextColor="@android:color/white" />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="@dimen/default_fab_size"
+            android:layout_height="@dimen/default_fab_size"
+            app:fab_elevationCompat="@dimen/default_elevation"
+            android:layout_margin="@dimen/default_margin"
+            android:src="@drawable/ic_check_white_48dp"
+            android:tint="@android:color/white"
+            app:layout_anchor="@id/appbar"
+            app:layout_anchorGravity="bottom|right|end"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_padding">
+
+            <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="@dimen/default_image_size"
+                android:layout_height="@dimen/default_image_size"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_create_white_48dp"
+                android:tint="@color/colorAccent"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:padding="@dimen/default_padding"
+                android:layout_gravity="bottom">
+
+                <EditText
+                    android:id="@+id/profName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_prof_name"
+                    android:textColor="@color/subTextColor"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_phone_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/profPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_prof_phone"
+                        android:inputType="phone"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_email_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/profEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_prof_email"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="@dimen/default_image_size"
+                    android:layout_height="@dimen/default_image_size"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_business_black_48dp"
+                    android:tint="@color/colorAccent"/>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_margin"
+                    android:padding="@dimen/default_padding"
+                    android:layout_gravity="bottom">
+
+                    <EditText
+                        android:id="@+id/profOffice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_prof_office"
+                        android:textColor="@color/subTextColor"
+                        android:textAppearance="?android:textAppearanceMedium" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </TableRow>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
